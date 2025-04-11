@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    restart: always
+
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: always
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - frontend
+      - backend
+    restart: always
