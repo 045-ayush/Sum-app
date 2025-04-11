@@ -1,0 +1,15 @@
+# Node
+**/node_modules
+**/build
+**/.env
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
