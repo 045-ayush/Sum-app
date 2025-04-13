@@ -20,22 +20,22 @@ function App() {
   return (
     <div className="App">
       <h2>Sum Calculator</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}><br></br>
         <input
           type="number"
           value={num1}
           onChange={(e) => setNum1(e.target.value)}
           placeholder="First Number"
           required
-        />
+        /><br></br>
         <input
           type="number"
           value={num2}
           onChange={(e) => setNum2(e.target.value)}
           placeholder="Second Number"
           required
-        />
-        <button type="submit">Calculate Sum</button>
+        /><br></br>
+        <button type="submit">Calculate Sum</button><br></br>
       </form>
       {result !== null && <h3>Result: {result}</h3>}
     </div>
