@@ -8,7 +8,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('https://sum-app-backend.azurewebsites.net/sum', {
+    const response = await fetch('https://sumfunctionappbe.azurewebsites.net/api/sum', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ num1: Number(num1), num2: Number(num2) }),
